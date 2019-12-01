@@ -1,0 +1,101 @@
+body {
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    list-style-type: none;
+}
+
+/********************* NAVBAR ************************/
+header nav {
+    overflow: hidden;
+    background-color: #FFFAE1;
+    position: fixed;
+    width: 100%;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+/* header li a :visited {
+    color: black;
+} */
+header #logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    float: left;
+}
+header li :hover {
+    background-color: #FFFAE1;
+}
+/* **************** PHOTO PRINCIPALE ******************* */
+#imagePrincipale {
+    padding-top: 60px;
+    background-image: url(./media/p.1.JPG);
+    background-repeat:no-repeat;
+    height: 700px;
+    
+} 
+
+#imagePrincipale h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 6em;
+    margin-top: 13%;
+}
+#imagePrincipale h3 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+}
+
+/* ******************* PRESENTATION ******************** */
+
+#presentation h2 {
+    text-align: center;
+    padding: 10% 0 5% 0;
+    font-size: 2em;
+}
+#presentation ul li {
+    /* flex: space-between;
+    display: block; */
+    height: 250px;
+    width: 200px;
+}
+
+#pres-1 {
+    background-image: url(./media/p.2.1.JPG);
+}
+
+#pres-2 {
+    background-image: url(./media/p.2.2.JPG);
+}
+
+#pres-3 {
+    background-image: url(./media/p.2.3.JPG);
+}
+
+
+
+
+
+
+/* ********************* TOURISME *********************** */
+
+#tourisme {
+    background-color: #FFFAE1;
+}
+
+/* ********************** FOOTER ********************* */
+
+footer {
+    background-color: #524A3A;
+}
