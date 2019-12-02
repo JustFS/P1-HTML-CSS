@@ -6,6 +6,12 @@ body {
 li {
     list-style-type: none;
 }
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 2em;
+}
 
 /********************* NAVBAR ************************/
 header nav {
@@ -13,6 +19,7 @@ header nav {
     background-color: #FFFAE1;
     position: fixed;
     width: 100%;
+    opacity: 0.9;
 }
 header li {
     float: right;
@@ -38,64 +45,150 @@ header li :hover {
 /* **************** PHOTO PRINCIPALE ******************* */
 #imagePrincipale {
     padding-top: 60px;
-    background-image: url(./media/p.1.JPG);
-    background-repeat:no-repeat;
-    height: 700px;
-    
+    background: url(media/p.1.JPG) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
 } 
-
 #imagePrincipale h1 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     color: antiquewhite;
     font-size: 6em;
-    margin-top: 13%;
+    margin-top: 11%;
+    text-shadow: 1px 3px 2px #050201;
 }
 #imagePrincipale h3 {
     text-align: center;
     color: antiquewhite;
     font-size: 3em;
+    text-shadow: 1px 3px 2px #050201;
+}
+#imagePrincipale #premierTrait {
+    height: 0.1em;
+    width: 25%;
+    margin: -3% auto;
+    background-color: beige;
+    box-shadow: 1px 3px 2px #050201;
 }
 
 /* ******************* PRESENTATION ******************** */
 
-#presentation h2 {
+#presentation {
+    background-color: #FFFAE1;
+    padding: 10px 0 100px 0;
+}
+#presentation #texteIntro {
+    padding: 0px 20%;
+}
+#prestations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+#prestations .imagesPrestations p {
+    font-family: 'Dancing Script', cursive;
     text-align: center;
-    padding: 10% 0 5% 0;
-    font-size: 2em;
+    font-size: 1.8em;
 }
-#presentation ul li {
-    /* flex: space-between;
-    display: block; */
-    height: 250px;
-    width: 200px;
+#prestations .imagesPrestations img {
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px 1px rgba(0,0,0,0.6);
 }
-
-#pres-1 {
-    background-image: url(./media/p.2.1.JPG);
+#prestations .imagesPrestations img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.8s ease-out;
 }
-
-#pres-2 {
-    background-image: url(./media/p.2.2.JPG);
-}
-
-#pres-3 {
-    background-image: url(./media/p.2.3.JPG);
-}
-
-
-
-
-
 
 /* ********************* TOURISME *********************** */
 
 #tourisme {
-    background-color: #FFFAE1;
+    background-color: rgba(245, 245, 245, 0.788);
+    padding: 5px 2% 110% 2%;
+}
+#tourisme li {
+    margin-top: 50px;
+    height: 226px;
+    width:550px;
+    z-index: 2;
+    float: left;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+#tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: #01DF74;
+    float: right;
+    margin: 9% -200px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 8px 8px 0px 1px rgba(51,15,158,1);
+}
+#tourisme #chateau, #tourisme #vignoble {
+    float: right;
+}
+#tourisme #chateau p, #tourisme #vignoble p {
+    float: left;
+    background-color: cyan;
+    margin-left: -200px;
+    box-shadow: -8px 8px 0px 1px rgba(15,154,156,1);
+}
+#tourisme #ocean {
+    background: url(media/p.3.1.jpg);
+}
+#tourisme #chateau {
+    background: url(media/p.3.2.JPG);
+}
+#tourisme #phare {
+    background: url(media/p.3.3.JPG)
+}
+#tourisme #vignoble {
+    background: url(media/p.3.4.jpg)
 }
 
 /* ********************** FOOTER ********************* */
 
 footer {
     background-color: #524A3A;
+    padding: 2px 0 14px 0;
 }
+footer h2 {
+    padding-top: 30px;
+    color: #FFFAE1;
+}
+#contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+
+form {
+    margin: 0 auto;
+  
+}
+input, textarea {
+    border: none;
+    padding: 11px 4px;
+    width: 242px;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    margin: 2px;
+    border-radius: 8px;
+}
+textarea {
+    width: 500px;
+    margin-top: 5px;
+}
+button {
+    width: 508px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-left: 2px;
+    margin-top: 2px;
+    font-size: 1.7em;
+}
+
